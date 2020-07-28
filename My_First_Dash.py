@@ -2,44 +2,17 @@
 # coding: utf-8
 
 # In[1]:
-
-
-import plotly.graph_objects as go
-from jupyter_dash import JupyterDash
 import dash  # (version 1.12.0) pip install dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from datetime import datetime as dt
-from datetime import date
-from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
-import cufflinks as cf
 import plotly.express as px
-init_notebook_mode(connected=True)
-cf.go_offline()
-#matplotlib inline
-
 
 # In[4]:
-
-
 df_dates_only=pd.read_excel('First_Dash_Memo.xlsx')
-
-
 # In[5]:
-
-
-import plotly.express as px  # (version 4.7.0)
-import plotly.graph_objects as go
-from jupyter_dash import JupyterDash
-import dash  # (version 1.12.0) pip install dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
 
 #app = JupyterDash(__name__)
 app = dash.Dash(__name__)
